@@ -1,0 +1,25 @@
+config:
+    name: "预约端登录"
+    base_url: ${ENV(php_base_url)}
+    verify: False
+
+teststeps:
+-
+    name: 账号密码登录
+    variables:
+        phone: "${ENV(USERNAME)}"
+        password: "${ENV(password)}"
+    request:
+        method: GET
+        url: /user_auth/login/pass
+        params:
+            phone: $phone
+            pass: $password
+            brand: himo
+    extract:
+        stream_id: headers."X-Stream-Id"
+        Content-Type: headers."Content-Type"
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.success", True]
+        - eq: ["body.msg", login success]

@@ -1,0 +1,63 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Trace-Id": "rtft3uGtaQKR5kWz",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userId": 20055518,
+        "name": "185******33",
+        "phone": "18552288933",
+        "unionId": "obcxg5lGgOFz-QeKMwHQZh2qvevw",
+        "birth": "1990-01-01",
+        "headSculpture": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqZa5JLibSPy7vIibsVHllPRvFFViaw1rXzqQMfC87TRmVLbTpycn3DbNS2hjSE5BGB7J9ibYJOBcHMog/132",
+        "sex": "female",
+        "email": "",
+        "togetherDays": 151,
+        "wxName": "追你跑丢了鞋",
+        "positionId": 0,
+        "cityId": 0,
+        "tags": {
+            "preference": [],
+            "purpose": [],
+            "editBirthday": false,
+            "protocolVersion": 10,
+            "cancelAccount": false,
+            "newUserCouponFamily": true
+        },
+        "hasPassword": true,
+        "industryId": 0,
+        "isAlert": false,
+        "medalNum": 9,
+        "memberInfo": {
+            "consumeTotal": 14343.78,
+            "userExp": 14341,
+            "userIntegral": 28971,
+            "userLevel": "v4",
+            "consumeNum": 16,
+            "reviewTime": "2024-02-24 00:00:00",
+            "lastBuyTime": "",
+            "joinMemberTime": "",
+            "enablePush": 0,
+            "nextScore": 0,
+            "nextConsumeTimes": 0,
+            "milestoneStatus": "none",
+            "isCollegeStudent": false,
+            "coupleMemberStatus": "non"
+        },
+        "preferentialInfo": {
+            "giftCardMoney": 6920.49,
+            "couponsCount": 2
+        }
+    }
+}

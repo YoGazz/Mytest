@@ -1,0 +1,20 @@
+====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-system/company/add
+method: POST
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "Authorization": "Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+    "content-type": "application/json;charset=UTF-8",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649706"
+}
+json: {
+    "address": "杭州市钱塘区白杨街道外包服务大楼",
+    "groupCompanyId": 1001,
+    "name": "毕博诚科技有限公司",
+    "type": "0"
+}

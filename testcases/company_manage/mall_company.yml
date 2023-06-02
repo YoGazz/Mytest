@@ -1,0 +1,48 @@
+config:
+    name: "字典项"
+    base_url: ${ENV(java_base_url)}
+    variables:
+        code: D0067
+    verify: False
+
+teststeps:
+-
+    name: "用户登录"
+    testcase: testcases/login/login.yml
+    export:
+        - access_token
+-
+    name: "获取公司类型"
+    request:
+        method: "GET"
+        url: /pbc-system/sysDictInfo/findByCode
+        headers:
+            Authorization: "Bearer $access_token"
+        params:
+            code: $code
+    extract:
+        # 默认公司类型
+        default_company_type: body.msg[0].itemValue
+        # 主公司
+        main_company_type: body.msg[1].itemValue
+        # 分公司
+        sub_company_type: body.msg[1].itemValue
+        # 子公司
+        branch_company_type: body.msg[1].itemValue
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.success", True]
+
+-
+    name: "获取集团列表"
+    request:
+        method: "GET"
+        url: /pbc-system/sysGroupCompanyInfo/getGroupCompanyList
+        headers:
+            Authorization: "Bearer $access_token"
+    extract:
+        group_company_id: body.msg[0].id
+        group_name: body.msg[0].name
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.success", True]

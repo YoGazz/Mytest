@@ -1,0 +1,39 @@
+config:
+    name: "公司管理"
+    base_url: ${ENV(java_base_url)}
+    variables:
+        company_name: ${gender_name()}
+    verify: False
+
+teststeps:
+-
+    name: "获取集团iD、公司类型"
+    testcase: testcases/company_manage/mall_company.yml
+    export:
+        - access_token
+        - group_company_id
+        - default_company_type
+        - main_company_type
+        - sub_company_type
+        - branch_company_type
+
+-
+    name: "创建公司"
+    marks:
+        - priority: P0
+        - tag: smoke
+    request:
+        method: "POST"
+        url: /pbc-system/company/add
+        headers:
+            Authorization: "Bearer $access_token"
+            content-type: "application/json;charset=UTF-8"
+        json:
+            address: "${ENV(ADDRESS)}"
+            groupCompanyId: "$group_company_id"
+            name: "$company_name"
+            type: "$default_company_type"
+    validate:
+        - eq: [ "status_code", 200 ]
+        - eq: [ "body.msg", "添加成功" ]
+        - eq: [ "body.success", True ]

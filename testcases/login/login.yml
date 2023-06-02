@@ -1,0 +1,29 @@
+config:
+    name: "中台登录"
+    base_url: ${ENV(java_base_url)}
+    verify: False
+
+teststeps:
+
+-   name: 账号密码登录
+    variables:
+        phone: "${ENV(USERNAME)}"
+        password: "${ENV(PASSWORD)}"
+        grant_type: passwd
+        dingLoginVersion: new
+    request:
+        method: POST
+        url: /pbc-auth/oauth/token
+        headers:
+            authorization: Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==
+        params:
+            grant_type: $grant_type
+            phone: $phone
+            password: $password
+            dingLoginVersion: $dingLoginVersion
+    extract:
+        access_token: body.msg.access_token
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.success", True]
+        - eq: ["body.error_code", Null]

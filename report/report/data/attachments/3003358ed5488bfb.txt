@@ -1,0 +1,125 @@
+2023-05-25 18:14:09.759 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:09.760 | DEBUG | ====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token
+method: POST
+params: {
+    "grant_type": "passwd",
+    "phone": "18552288933",
+    "password": "bafa59c5938ad50f154006d25e46babd",
+    "dingLoginVersion": "new"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-71ff57d0-f831-4398-8b93-78ff787d3227-649760"
+}
+json: None
+
+2023-05-25 18:14:09.923 | DEBUG | client IP: 10.20.221.95, Port: 64344
+2023-05-25 18:14:09.924 | DEBUG | server IP: 47.97.41.173, Port: 443
+2023-05-25 18:14:09.926 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?grant_type=passwd&phone=18552288933&password=bafa59c5938ad50f154006d25e46babd&dingLoginVersion=new
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-71ff57d0-f831-4398-8b93-78ff787d3227-649760",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:09.928 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:10 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "17",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.929 | INFO | status_code: 200, response_time(ms): 161.29 ms, response_length: 0 bytes
+2023-05-25 18:14:09.930 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:10 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "17",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.932 | INFO | extract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}
+2023-05-25 18:14:09.933 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:09.934 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:09.935 | INFO | assert body.error_code equal None(NoneType)	==> pass
+2023-05-25 18:14:09.935 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:09.936 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/71ff57d0-f831-4398-8b93-78ff787d3227.run.log

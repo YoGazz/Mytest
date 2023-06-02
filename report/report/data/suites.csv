@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 25 18:14:09 CST 2023","Thu May 25 18:14:09 CST 2023","262","testcases.company_manage","mall_company_test","TestCaseMallCompany","","","字典项","TestCase ID: 18467f3b-f0ce-409b-8c86-c35799741a70"
+"passed","Thu May 25 18:14:09 CST 2023","Thu May 25 18:14:09 CST 2023","354","testcases.company_manage","add_company_test","TestCaseAddCompany","","","公司管理","TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2"
+"passed","Thu May 25 18:14:08 CST 2023","Thu May 25 18:14:09 CST 2023","131","testcases.login","himo_login_test","TestCaseHimoLogin","","","预约端登录","TestCase ID: cfa377fc-8e82-41f4-981c-680b838568fb"
+"passed","Thu May 25 18:14:08 CST 2023","Thu May 25 18:14:08 CST 2023","206","testcases.login","get_userinfo_test","TestCaseGetUserinfo","","","获取用户信息","TestCase ID: 3a265316-c34c-4bc0-b477-823c706bc92e"
+"passed","Thu May 25 18:14:09 CST 2023","Thu May 25 18:14:09 CST 2023","188","testcases.login","login_test","TestCaseLogin","","","中台登录","TestCase ID: 71ff57d0-f831-4398-8b93-78ff787d3227"

@@ -1,0 +1,89 @@
+2023-05-25 18:14:09.006 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:09.007 | DEBUG | ====== request details ======
+url: https://api.pre.hzmantu.com/user_auth/login/pass
+method: GET
+params: {
+    "phone": "18552288933",
+    "pass": "123456",
+    "brand": "himo"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-cfa377fc-8e82-41f4-981c-680b838568fb-649007"
+}
+json: None
+
+2023-05-25 18:14:09.115 | DEBUG | client IP: 10.20.221.95, Port: 64341
+2023-05-25 18:14:09.116 | DEBUG | server IP: 47.101.236.68, Port: 443
+2023-05-25 18:14:09.117 | DEBUG | 
+================== request details ==================
+method   : GET
+url      : https://api.pre.hzmantu.com/user_auth/login/pass?phone=18552288933&pass=123456&brand=himo
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-cfa377fc-8e82-41f4-981c-680b838568fb-649007"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:09.118 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2416850096491926212e722c791a0a5433dd250ceb4df5ca69f95e94;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "65wd6t4z-f7fd-p1uu-sw04-j31ui9wv0oyjdlgz",
+    "X-Trace-Id": "J3NTDML3eBeHvVtS",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {
+    "acw_tc": "781bad2416850096491926212e722c791a0a5433dd250ceb4df5ca69f95e94"
+}
+encoding : utf-8
+content_type : application/json;charset=utf-8
+body     : {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:09.118 | INFO | status_code: 200, response_time(ms): 106.82 ms, response_length: 0 bytes
+2023-05-25 18:14:09.119 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2416850096491926212e722c791a0a5433dd250ceb4df5ca69f95e94;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "65wd6t4z-f7fd-p1uu-sw04-j31ui9wv0oyjdlgz",
+    "X-Trace-Id": "J3NTDML3eBeHvVtS",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+body: {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:09.120 | INFO | extract mapping: {'stream_id': '65wd6t4z-f7fd-p1uu-sw04-j31ui9wv0oyjdlgz', 'Content-Type': 'application/json;charset=utf-8'}
+2023-05-25 18:14:09.121 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:09.122 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:09.124 | INFO | assert body.msg equal login success(str)	==> pass
+2023-05-25 18:14:09.125 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:09.125 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/cfa377fc-8e82-41f4-981c-680b838568fb.run.log

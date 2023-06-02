@@ -1,0 +1,1970 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestReport</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        #summary {
+            width: 960px;
+            margin-bottom: 20px;
+        }
+
+        #summary th {
+            background-color: skyblue;
+            padding: 5px 12px;
+        }
+
+        #summary td {
+            background-color: lightblue;
+            text-align: center;
+            padding: 4px 8px;
+        }
+
+        .details {
+            width: 960px;
+            margin-bottom: 20px;
+        }
+
+        .details th {
+            background-color: skyblue;
+            padding: 5px 12px;
+        }
+
+        .details tr .passed {
+            background-color: lightgreen;
+        }
+
+        .details tr .failed {
+            background-color: red;
+        }
+
+        .details tr .unchecked {
+            background-color: gray;
+        }
+
+        .details td {
+            background-color: lightblue;
+            padding: 5px 12px;
+        }
+
+        .details .detail {
+            background-color: lightgrey;
+            font-size: smaller;
+            padding: 5px 10px;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .details .success {
+            background-color: greenyellow;
+        }
+
+        .details .error {
+            background-color: red;
+        }
+
+        .details .failure {
+            background-color: salmon;
+        }
+
+        .details .skipped {
+            background-color: gray;
+        }
+
+        .button {
+            font-size: 1em;
+            padding: 6px;
+            width: 4em;
+            text-align: center;
+            background-color: #06d85f;
+            border-radius: 20px/50px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        a.button {
+            color: gray;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background: #2cffbd;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            line-height: 25px;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            width: 50%;
+            position: relative;
+            transition: all 3s ease-in-out;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #06d85f;
+        }
+
+        .popup .content {
+            max-height: 80%;
+            overflow: auto;
+            text-align: left;
+        }
+
+        .popup .separator {
+            color: royalblue
+        }
+
+        @media screen and (max-width: 700px) {
+            .box {
+                width: 70%;
+            }
+
+            .popup {
+                width: 70%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+<h1>API Test Report</h1>
+
+<h2>Summary</h2>
+<table id="summary">
+    <tr>
+        <th>START AT</th>
+        <td colspan="4">2023-05-25 18:15:56.107624 &#43;0800 CST m=&#43;0.041727129</td>
+    </tr>
+    <tr>
+        <th>DURATION</th>
+        <td colspan="4">5.85310988 seconds</td>
+    </tr>
+    <tr>
+        <th>PLATFORM</th>
+        <td>HttpRunnerPlus v4.3.3</td>
+        <td>go1.20.3</td>
+        <td colspan="2">darwin-amd64</td>
+    </tr>
+    <tr>
+        <th>STAT</th>
+        <th colspan="2">TESTCASES (success/fail)</th>
+        <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+        <td>total (details) =></td>
+        <td colspan="2">5 (5/0)</td>
+        <td colspan="2">11 (11/0/0/0)</td>
+    </tr>
+</table>
+
+<h2>Details</h2>
+
+<h3>公司管理</h3>
+<table id="suite_0" class="details">
+    <tr>
+        <td>TOTAL: 4</td>
+        <td>SUCCESS: 4</td>
+        <td>FAILED: 0</td>
+        <td>ERROR: 0</td>
+        <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <th colspan="2">Name</th>
+        <th>Response Time</th>
+        <th>Detail</th>
+    </tr>  
+    <tr id="record_0_0">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取集团iD、公司类型 - 用户登录 - 账号密码登录</td>
+        <td style="text-align:center;width:6em;">187 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_0_0">log</a>
+            <div id="popup_log_0_0" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_0_0">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取集团iD、公司类型 - 用户登录 - 账号密码登录</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>POST</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>dingLoginVersion: new</pre>
+                                        <pre>grant_type: passwd</pre>
+                                        <pre>password: bafa59c5938ad50f154006d25e46babd</pre>
+                                        <pre>phone: 18552288933</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?dingLoginVersion=new&amp;grant_type=passwd&amp;password=bafa59c5938ad50f154006d25e46babd&amp;phone=18552288933</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;error_code&#34;: null,
+    &#34;error_msg&#34;: null,
+    &#34;msg&#34;: {
+    &#34;access_token&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr&#34;,
+    &#34;authentication&#34;: &#34;passwd&#34;,
+    &#34;expires_in&#34;: 12703,
+    &#34;jti&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e326&#34;,
+    &#34;refresh_token&#34;: null,
+    &#34;token_type&#34;: null,
+    &#34;userid&#34;: 622730
+},
+    &#34;success&#34;: true,
+    &#34;trace_id&#34;: null
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Cache-Control: no-cache, no-store, max-age=0, must-revalidate</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:58 GMT</pre>
+                                        <pre>Expires: 0</pre>
+                                        <pre>Pragma: no-cache</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                        <pre>X-Content-Type-Options: nosniff</pre>
+                                        <pre>X-Frame-Options: DENY</pre>
+                                        <pre>X-Ratelimit-Burst-Capacity: 20</pre>
+                                        <pre>X-Ratelimit-Remaining: 19</pre>
+                                        <pre>X-Ratelimit-Replenish-Rate: 10</pre>
+                                        <pre>X-Ratelimit-Requested-Tokens: 1</pre>
+                                        <pre>X-Xss-Protection: 1; mode=block</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.error_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>187</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>187</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_0_1">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取集团iD、公司类型 - 获取公司类型</td>
+        <td style="text-align:center;width:6em;">24 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_0_1">log</a>
+            <div id="popup_log_0_1" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_0_1">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取集团iD、公司类型 - 获取公司类型</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>code: D0067</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-system/sysDictInfo/findByCode?code=D0067</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: [
+    {
+        &#34;itemName&#34;: &#34;默认&#34;,
+        &#34;itemValue&#34;: &#34;0&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;主公司&#34;,
+        &#34;itemValue&#34;: &#34;1&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;子公司&#34;,
+        &#34;itemValue&#34;: &#34;2&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;分公司&#34;,
+        &#34;itemValue&#34;: &#34;3&#34;
+    }
+],
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:58 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>24</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_0_2">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取集团iD、公司类型 - 获取集团列表</td>
+        <td style="text-align:center;width:6em;">21 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_0_2">log</a>
+            <div id="popup_log_0_2" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_0_2">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取集团iD、公司类型 - 获取集团列表</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-system/sysGroupCompanyInfo/getGroupCompanyList</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: [
+    {
+        &#34;id&#34;: 1001,
+        &#34;name&#34;: &#34;测试集团111&#34;
+    }
+],
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:58 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>21</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_0_3">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">创建公司</td>
+        <td style="text-align:center;width:6em;">33 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_0_3">log</a>
+            <div id="popup_log_0_3" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_0_3">&times;</a>
+                    <div class="content">
+                        <h3>Name: 创建公司</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>map[address:杭州市钱塘区白杨街道外包服务大楼 groupCompanyId:1001 name:易动力网络有限公司 type:0]</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr</pre>
+                                        <pre>Content-Type: application/json; charset=utf-8</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>POST</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-system/company/add</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: &#34;添加成功&#34;,
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:58 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.msg
+                                    </td>
+                                    <td>eq</td>
+                                    <td>添加成功</td>
+                                    <td>添加成功</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>33</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>33</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+<h3>字典项</h3>
+<table id="suite_1" class="details">
+    <tr>
+        <td>TOTAL: 3</td>
+        <td>SUCCESS: 3</td>
+        <td>FAILED: 0</td>
+        <td>ERROR: 0</td>
+        <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <th colspan="2">Name</th>
+        <th>Response Time</th>
+        <th>Detail</th>
+    </tr>  
+    <tr id="record_1_0">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">用户登录 - 账号密码登录</td>
+        <td style="text-align:center;width:6em;">128 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_1_0">log</a>
+            <div id="popup_log_1_0" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_1_0">&times;</a>
+                    <div class="content">
+                        <h3>Name: 用户登录 - 账号密码登录</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>POST</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>dingLoginVersion: new</pre>
+                                        <pre>grant_type: passwd</pre>
+                                        <pre>password: bafa59c5938ad50f154006d25e46babd</pre>
+                                        <pre>phone: 18552288933</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?dingLoginVersion=new&amp;grant_type=passwd&amp;password=bafa59c5938ad50f154006d25e46babd&amp;phone=18552288933</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;error_code&#34;: null,
+    &#34;error_msg&#34;: null,
+    &#34;msg&#34;: {
+    &#34;access_token&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr&#34;,
+    &#34;authentication&#34;: &#34;passwd&#34;,
+    &#34;expires_in&#34;: 12701,
+    &#34;jti&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e326&#34;,
+    &#34;refresh_token&#34;: null,
+    &#34;token_type&#34;: null,
+    &#34;userid&#34;: 622730
+},
+    &#34;success&#34;: true,
+    &#34;trace_id&#34;: null
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Cache-Control: no-cache, no-store, max-age=0, must-revalidate</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:59 GMT</pre>
+                                        <pre>Expires: 0</pre>
+                                        <pre>Pragma: no-cache</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                        <pre>X-Content-Type-Options: nosniff</pre>
+                                        <pre>X-Frame-Options: DENY</pre>
+                                        <pre>X-Ratelimit-Burst-Capacity: 20</pre>
+                                        <pre>X-Ratelimit-Remaining: 19</pre>
+                                        <pre>X-Ratelimit-Replenish-Rate: 10</pre>
+                                        <pre>X-Ratelimit-Requested-Tokens: 1</pre>
+                                        <pre>X-Xss-Protection: 1; mode=block</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.error_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>128</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>128</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_1_1">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取公司类型</td>
+        <td style="text-align:center;width:6em;">19 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_1_1">log</a>
+            <div id="popup_log_1_1" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_1_1">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取公司类型</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>code: D0067</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-system/sysDictInfo/findByCode?code=D0067</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: [
+    {
+        &#34;itemName&#34;: &#34;默认&#34;,
+        &#34;itemValue&#34;: &#34;0&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;主公司&#34;,
+        &#34;itemValue&#34;: &#34;1&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;子公司&#34;,
+        &#34;itemValue&#34;: &#34;2&#34;
+    },
+    {
+        &#34;itemName&#34;: &#34;分公司&#34;,
+        &#34;itemValue&#34;: &#34;3&#34;
+    }
+],
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:59 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>19</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_1_2">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取集团列表</td>
+        <td style="text-align:center;width:6em;">22 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_1_2">log</a>
+            <div id="popup_log_1_2" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_1_2">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取集团列表</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-system/sysGroupCompanyInfo/getGroupCompanyList</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: [
+    {
+        &#34;id&#34;: 1001,
+        &#34;name&#34;: &#34;测试集团111&#34;
+    }
+],
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:15:59 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>22</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+<h3>获取用户信息</h3>
+<table id="suite_2" class="details">
+    <tr>
+        <td>TOTAL: 2</td>
+        <td>SUCCESS: 2</td>
+        <td>FAILED: 0</td>
+        <td>ERROR: 0</td>
+        <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <th colspan="2">Name</th>
+        <th>Response Time</th>
+        <th>Detail</th>
+    </tr>  
+    <tr id="record_2_0">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取登录鉴权 - 账号密码登录</td>
+        <td style="text-align:center;width:6em;">100 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_2_0">log</a>
+            <div id="popup_log_2_0" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_2_0">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取登录鉴权 - 账号密码登录</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>brand: himo</pre>
+                                        <pre>pass: 123456</pre>
+                                        <pre>phone: 18552288933</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://api.pre.hzmantu.com/user_auth/login/pass?brand=himo&amp;pass=123456&amp;phone=18552288933</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: &#34;login success&#34;,
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                        <pre>acw_tc: 781bad2316850097607226815e5127e4be5cc1e8ac51f1fce08d54603567b3</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Access-Control-Allow-Origin: *</pre>
+                                        <pre>Access-Control-Expose-Headers: x-trace-id, x-stream-id, x-authority-action</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Length: 38</pre>
+                                        <pre>Content-Type: application/json;charset=utf-8</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:16:00 GMT</pre>
+                                        <pre>Set-Cookie: acw_tc=781bad2316850097607226815e5127e4be5cc1e8ac51f1fce08d54603567b3;path=/;HttpOnly;Max-Age=1800</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>X-Authority-Action: Invoke</pre>
+                                        <pre>X-Stream-Id: buw64n8z-b96p-7ru0-f3zt-mjlgsdp9w73uuso1</pre>
+                                        <pre>X-Trace-Id: 75duQXnMVnb6r36L</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.msg
+                                    </td>
+                                    <td>eq</td>
+                                    <td>login success</td>
+                                    <td>login success</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>100</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>  
+    <tr id="record_2_1">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">获取用户信息</td>
+        <td style="text-align:center;width:6em;">64 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_2_1">log</a>
+            <div id="popup_log_2_1" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_2_1">&times;</a>
+                    <div class="content">
+                        <h3>Name: 获取用户信息</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>X-Stream-Id: buw64n8z-b96p-7ru0-f3zt-mjlgsdp9w73uuso1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://api.pre.hzmantu.com/appointment_platform/user/user/detail</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: {
+    &#34;birth&#34;: &#34;1990-01-01&#34;,
+    &#34;cityId&#34;: 0,
+    &#34;email&#34;: &#34;&#34;,
+    &#34;hasPassword&#34;: true,
+    &#34;headSculpture&#34;: &#34;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqZa5JLibSPy7vIibsVHllPRvFFViaw1rXzqQMfC87TRmVLbTpycn3DbNS2hjSE5BGB7J9ibYJOBcHMog/132&#34;,
+    &#34;industryId&#34;: 0,
+    &#34;isAlert&#34;: false,
+    &#34;medalNum&#34;: 9,
+    &#34;memberInfo&#34;: {
+    &#34;consumeNum&#34;: 16,
+    &#34;consumeTotal&#34;: 14343.78,
+    &#34;coupleMemberStatus&#34;: &#34;non&#34;,
+    &#34;enablePush&#34;: 0,
+    &#34;isCollegeStudent&#34;: false,
+    &#34;joinMemberTime&#34;: &#34;&#34;,
+    &#34;lastBuyTime&#34;: &#34;&#34;,
+    &#34;milestoneStatus&#34;: &#34;none&#34;,
+    &#34;nextConsumeTimes&#34;: 0,
+    &#34;nextScore&#34;: 0,
+    &#34;reviewTime&#34;: &#34;2024-02-24 00:00:00&#34;,
+    &#34;userExp&#34;: 14341,
+    &#34;userIntegral&#34;: 28971,
+    &#34;userLevel&#34;: &#34;v4&#34;
+},
+    &#34;name&#34;: &#34;185******33&#34;,
+    &#34;phone&#34;: &#34;18552288933&#34;,
+    &#34;positionId&#34;: 0,
+    &#34;preferentialInfo&#34;: {
+    &#34;couponsCount&#34;: 2,
+    &#34;giftCardMoney&#34;: 6920.49
+},
+    &#34;sex&#34;: &#34;female&#34;,
+    &#34;tags&#34;: {
+    &#34;cancelAccount&#34;: false,
+    &#34;editBirthday&#34;: false,
+    &#34;newUserCouponFamily&#34;: true,
+    &#34;preference&#34;: [],
+    &#34;protocolVersion&#34;: 10,
+    &#34;purpose&#34;: []
+},
+    &#34;togetherDays&#34;: 151,
+    &#34;unionId&#34;: &#34;obcxg5lGgOFz-QeKMwHQZh2qvevw&#34;,
+    &#34;userId&#34;: 20055518,
+    &#34;wxName&#34;: &#34;追你跑丢了鞋&#34;
+},
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Access-Control-Allow-Origin: *</pre>
+                                        <pre>Access-Control-Expose-Headers: x-trace-id, x-stream-id, x-authority-action</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json;charset=utf-8</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:16:00 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                        <pre>X-Trace-Id: JhVkk5dLRVduFmQq</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>64</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+<h3>预约端登录</h3>
+<table id="suite_3" class="details">
+    <tr>
+        <td>TOTAL: 1</td>
+        <td>SUCCESS: 1</td>
+        <td>FAILED: 0</td>
+        <td>ERROR: 0</td>
+        <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <th colspan="2">Name</th>
+        <th>Response Time</th>
+        <th>Detail</th>
+    </tr>  
+    <tr id="record_3_0">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">账号密码登录</td>
+        <td style="text-align:center;width:6em;">38 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_3_0">log</a>
+            <div id="popup_log_3_0" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_3_0">&times;</a>
+                    <div class="content">
+                        <h3>Name: 账号密码登录</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>GET</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>brand: himo</pre>
+                                        <pre>pass: 123456</pre>
+                                        <pre>phone: 18552288933</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://api.pre.hzmantu.com/user_auth/login/pass?brand=himo&amp;pass=123456&amp;phone=18552288933</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;msg&#34;: &#34;login success&#34;,
+    &#34;success&#34;: true
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Access-Control-Allow-Origin: *</pre>
+                                        <pre>Access-Control-Expose-Headers: x-trace-id, x-stream-id, x-authority-action</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Length: 38</pre>
+                                        <pre>Content-Type: application/json;charset=utf-8</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:16:01 GMT</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>X-Authority-Action: Invoke</pre>
+                                        <pre>X-Stream-Id: mg71o7hd-0559-e299-hwiy-d8qpnl9877mc81at</pre>
+                                        <pre>X-Trace-Id: 6Y7SV2eumtBYhUqQ</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.msg
+                                    </td>
+                                    <td>eq</td>
+                                    <td>login success</td>
+                                    <td>login success</td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>38</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+<h3>中台登录</h3>
+<table id="suite_4" class="details">
+    <tr>
+        <td>TOTAL: 1</td>
+        <td>SUCCESS: 1</td>
+        <td>FAILED: 0</td>
+        <td>ERROR: 0</td>
+        <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <th colspan="2">Name</th>
+        <th>Response Time</th>
+        <th>Detail</th>
+    </tr>  
+    <tr id="record_4_0">
+        <th class=success style="width:5em;">success</th>
+        <td colspan="2">账号密码登录</td>
+        <td style="text-align:center;width:6em;">123 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_4_0">log</a>
+            <div id="popup_log_4_0" class="overlay">
+                <div class="popup">
+                    <h2>Request and Response data</h2>
+                    <a class="close" href="#record_4_0">&times;</a>
+                    <div class="content">
+                        <h3>Name: 账号密码登录</h3>
+                        <h3>Request:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Authorization: Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>method</th>
+                                    <td align="left">
+                                        <pre>POST</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>params</th>
+                                    <td align="left">
+                                        <pre>dingLoginVersion: new</pre>
+                                        <pre>grant_type: passwd</pre>
+                                        <pre>password: bafa59c5938ad50f154006d25e46babd</pre>
+                                        <pre>phone: 18552288933</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td align="left">
+                                        <pre>https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?dingLoginVersion=new&amp;grant_type=passwd&amp;password=bafa59c5938ad50f154006d25e46babd&amp;phone=18552288933</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>Response:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>body</th>
+                                    <td align="left">
+                                        <pre>{
+    &#34;error_code&#34;: null,
+    &#34;error_msg&#34;: null,
+    &#34;msg&#34;: {
+    &#34;access_token&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr&#34;,
+    &#34;authentication&#34;: &#34;passwd&#34;,
+    &#34;expires_in&#34;: 12699,
+    &#34;jti&#34;: &#34;ae5a8328-351e-4d2b-abbd-cb3fae74e326&#34;,
+    &#34;refresh_token&#34;: null,
+    &#34;token_type&#34;: null,
+    &#34;userid&#34;: 622730
+},
+    &#34;success&#34;: true,
+    &#34;trace_id&#34;: null
+}</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>cookies</th>
+                                    <td align="left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>headers</th>
+                                    <td align="left">
+                                        <pre>Cache-Control: no-cache, no-store, max-age=0, must-revalidate</pre>
+                                        <pre>Connection: keep-alive</pre>
+                                        <pre>Content-Type: application/json</pre>
+                                        <pre>Date: Thu, 25 May 2023 10:16:02 GMT</pre>
+                                        <pre>Expires: 0</pre>
+                                        <pre>Pragma: no-cache</pre>
+                                        <pre>Strict-Transport-Security: max-age=15724800; includeSubDomains</pre>
+                                        <pre>Vary: Accept-Encoding</pre>
+                                        <pre>X-Content-Type-Options: nosniff</pre>
+                                        <pre>X-Frame-Options: DENY</pre>
+                                        <pre>X-Ratelimit-Burst-Capacity: 20</pre>
+                                        <pre>X-Ratelimit-Remaining: 19</pre>
+                                        <pre>X-Ratelimit-Replenish-Rate: 10</pre>
+                                        <pre>X-Ratelimit-Requested-Tokens: 1</pre>
+                                        <pre>X-Xss-Protection: 1; mode=block</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>proto</th>
+                                    <td align="left">
+                                        <pre>HTTP/1.1</pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>status_code</th>
+                                    <td align="left">
+                                        <pre>200</pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3>Validators:</h3>
+                        <div style="overflow: auto">
+                            <table>
+                                <tr>
+                                    <th>check</th>
+                                    <th>comparator</th>
+                                    <th>expect value</th>
+                                    <th>actual value</th>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        status_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.success
+                                    </td>
+                                    <td>eq</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td class="passed">
+                                        body.error_code
+                                    </td>
+                                    <td>eq</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <h3>Statistics:</h3>
+                            <div style="overflow: auto">
+                                <table>
+                                    <tr>
+                                        <th>content_size(bytes)</th>
+                                        <td>-1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>response_time(ms)</th>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <th>elapsed(ms)</th>
+                                        <td>123</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+</body>

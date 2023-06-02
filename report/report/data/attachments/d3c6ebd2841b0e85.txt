@@ -1,0 +1,32 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": [
+        {
+            "itemName": "默认",
+            "itemValue": "0"
+        },
+        {
+            "itemName": "主公司",
+            "itemValue": "1"
+        },
+        {
+            "itemName": "子公司",
+            "itemValue": "2"
+        },
+        {
+            "itemName": "分公司",
+            "itemValue": "3"
+        }
+    ]
+}

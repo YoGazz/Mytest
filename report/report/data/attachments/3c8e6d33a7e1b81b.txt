@@ -1,0 +1,19 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "X-Trace-Id": "xahezSdQ2paYQTPv",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+body: {
+    "success": true,
+    "msg": "login success"
+}

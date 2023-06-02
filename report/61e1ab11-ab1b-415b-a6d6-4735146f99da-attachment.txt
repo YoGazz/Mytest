@@ -1,0 +1,26 @@
+
+
+[32m2023-05-25 18:14:08.786[0m | [1mINFO[0m | [1mStart to run testcase: 获取用户信息, TestCase ID: 3a265316-c34c-4bc0-b477-823c706bc92e[0m
+[32m2023-05-25 18:14:08.793[0m | [1mINFO[0m | [1mrun step begin: 获取登录鉴权 >>>>>>[0m
+
+
+[32m2023-05-25 18:14:08.793[0m | [1mINFO[0m | [1mStart to run testcase: 预约端登录, TestCase ID: 3a265316-c34c-4bc0-b477-823c706bc92e[0m
+[32m2023-05-25 18:14:08.799[0m | [1mINFO[0m | [1mrun step begin: 账号密码登录 >>>>>>[0m
+[32m2023-05-25 18:14:08.910[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 105.52 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:08.912[0m | [1mINFO[0m | [1mextract mapping: {'stream_id': 'j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt', 'Content-Type': 'application/json;charset=utf-8'}[0m
+[32m2023-05-25 18:14:08.912[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:08.913[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:08.913[0m | [1mINFO[0m | [1massert body.msg equal login success(str)	==> pass[0m
+[32m2023-05-25 18:14:08.914[0m | [1mINFO[0m | [1mrun step end: 账号密码登录 <<<<<<
+[0m
+[32m2023-05-25 18:14:08.914[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/3a265316-c34c-4bc0-b477-823c706bc92e.run.log[0m
+[32m2023-05-25 18:14:08.916[0m | [1mINFO[0m | [1mexport variables: {'stream_id': 'j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt'}[0m
+[32m2023-05-25 18:14:08.916[0m | [1mINFO[0m | [1mrun step end: 获取登录鉴权 <<<<<<
+[0m
+[32m2023-05-25 18:14:08.916[0m | [1mINFO[0m | [1mrun step begin: 获取用户信息 >>>>>>[0m
+[32m2023-05-25 18:14:08.987[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 65.46 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:08.989[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:08.989[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:08.990[0m | [1mINFO[0m | [1mrun step end: 获取用户信息 <<<<<<
+[0m
+[32m2023-05-25 18:14:08.990[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/3a265316-c34c-4bc0-b477-823c706bc92e.run.log[0m

@@ -1,0 +1,14 @@
+====== request details ======
+url: https://api.pre.hzmantu.com/appointment_platform/user/user/detail
+method: GET
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "HRUN-Request-ID": "HRUN-3a265316-c34c-4bc0-b477-823c706bc92e-648917"
+}
+json: None

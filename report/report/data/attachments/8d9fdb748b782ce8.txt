@@ -1,0 +1,50 @@
+
+
+毕博诚科技有限公司
+[32m2023-05-25 18:14:09.440[0m | [1mINFO[0m | [1mStart to run testcase: 公司管理, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2[0m
+[32m2023-05-25 18:14:09.448[0m | [1mINFO[0m | [1mrun step begin: 获取集团iD、公司类型 >>>>>>[0m
+
+
+[32m2023-05-25 18:14:09.449[0m | [1mINFO[0m | [1mStart to run testcase: 字典项, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2[0m
+[32m2023-05-25 18:14:09.456[0m | [1mINFO[0m | [1mrun step begin: 用户登录 >>>>>>[0m
+
+
+[32m2023-05-25 18:14:09.456[0m | [1mINFO[0m | [1mStart to run testcase: 中台登录, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2[0m
+[32m2023-05-25 18:14:09.464[0m | [1mINFO[0m | [1mrun step begin: 账号密码登录 >>>>>>[0m
+[32m2023-05-25 18:14:09.622[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 150.96 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:09.625[0m | [1mINFO[0m | [1mextract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}[0m
+[32m2023-05-25 18:14:09.626[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:09.627[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:09.628[0m | [1mINFO[0m | [1massert body.error_code equal None(NoneType)	==> pass[0m
+[32m2023-05-25 18:14:09.629[0m | [1mINFO[0m | [1mrun step end: 账号密码登录 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.629[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log[0m
+[32m2023-05-25 18:14:09.631[0m | [1mINFO[0m | [1mexport variables: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}[0m
+[32m2023-05-25 18:14:09.632[0m | [1mINFO[0m | [1mrun step end: 用户登录 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.632[0m | [1mINFO[0m | [1mrun step begin: 获取公司类型 >>>>>>[0m
+[32m2023-05-25 18:14:09.659[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 20.39 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:09.661[0m | [1mINFO[0m | [1mextract mapping: {'default_company_type': '0', 'main_company_type': '1', 'sub_company_type': '1', 'branch_company_type': '1'}[0m
+[32m2023-05-25 18:14:09.662[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:09.662[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:09.663[0m | [1mINFO[0m | [1mrun step end: 获取公司类型 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.664[0m | [1mINFO[0m | [1mrun step begin: 获取集团列表 >>>>>>[0m
+[32m2023-05-25 18:14:09.696[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 24.54 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:09.698[0m | [1mINFO[0m | [1mextract mapping: {'group_company_id': 1001, 'group_name': '测试集团111'}[0m
+[32m2023-05-25 18:14:09.699[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:09.700[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:09.701[0m | [1mINFO[0m | [1mrun step end: 获取集团列表 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.702[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log[0m
+[32m2023-05-25 18:14:09.704[0m | [1mINFO[0m | [1mexport variables: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr', 'group_company_id': 1001, 'default_company_type': '0', 'main_company_type': '1', 'sub_company_type': '1', 'branch_company_type': '1'}[0m
+[32m2023-05-25 18:14:09.705[0m | [1mINFO[0m | [1mrun step end: 获取集团iD、公司类型 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.705[0m | [1mINFO[0m | [1mrun step begin: 创建公司 >>>>>>[0m
+[32m2023-05-25 18:14:09.742[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 31.99 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:09.744[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:09.745[0m | [1mINFO[0m | [1massert body.msg equal 添加成功(str)	==> pass[0m
+[32m2023-05-25 18:14:09.746[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:09.746[0m | [1mINFO[0m | [1mrun step end: 创建公司 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.747[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log[0m

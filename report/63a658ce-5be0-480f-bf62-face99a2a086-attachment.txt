@@ -1,0 +1,14 @@
+====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-system/sysGroupCompanyInfo/getGroupCompanyList
+method: GET
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "Authorization": "Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649665"
+}
+json: None

@@ -1,0 +1,19 @@
+====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token
+method: POST
+params: {
+    "grant_type": "passwd",
+    "phone": "18552288933",
+    "password": "bafa59c5938ad50f154006d25e46babd",
+    "dingLoginVersion": "new"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-71ff57d0-f831-4398-8b93-78ff787d3227-649760"
+}
+json: None

@@ -1,0 +1,16 @@
+====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-system/sysDictInfo/findByCode
+method: GET
+params: {
+    "code": "D0067"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "Authorization": "Bearer ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649633"
+}
+json: None

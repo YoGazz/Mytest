@@ -1,0 +1,17 @@
+====== request details ======
+url: https://api.pre.hzmantu.com/user_auth/login/pass
+method: GET
+params: {
+    "phone": "18552288933",
+    "pass": "123456",
+    "brand": "himo"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-cfa377fc-8e82-41f4-981c-680b838568fb-649007"
+}
+json: None

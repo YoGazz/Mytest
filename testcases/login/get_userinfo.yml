@@ -1,0 +1,22 @@
+config:
+    name: "获取用户信息"
+    base_url: ${ENV(php_base_url)}
+    verify: False
+
+teststeps:
+-
+    name: "获取登录鉴权"
+    testcase: testcases/login/himo_login.yml
+    export:
+        - stream_id
+
+-
+    name: "获取用户信息"
+    request:
+        method: "GET"
+        url: /appointment_platform/user/user/detail
+        headers:
+            X-Stream-Id: $stream_id
+    validate:
+        - eq: [ "status_code", 200 ]
+        - eq: [ "body.success", True ]

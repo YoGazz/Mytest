@@ -1,0 +1,381 @@
+2023-05-25 18:14:09.448 | INFO | run step begin: 获取集团iD、公司类型 >>>>>>
+2023-05-25 18:14:09.449 | INFO | Start to run testcase: 字典项, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2
+2023-05-25 18:14:09.456 | INFO | run step begin: 用户登录 >>>>>>
+2023-05-25 18:14:09.456 | INFO | run step begin: 用户登录 >>>>>>
+2023-05-25 18:14:09.456 | INFO | Start to run testcase: 中台登录, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2
+2023-05-25 18:14:09.456 | INFO | Start to run testcase: 中台登录, TestCase ID: 6cca1023-eaa4-4ddd-9aeb-cade6e137ec2
+2023-05-25 18:14:09.464 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:09.464 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:09.464 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:09.465 | DEBUG | ====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token
+method: POST
+params: {
+    "grant_type": "passwd",
+    "phone": "18552288933",
+    "password": "bafa59c5938ad50f154006d25e46babd",
+    "dingLoginVersion": "new"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464"
+}
+json: None
+
+2023-05-25 18:14:09.465 | DEBUG | ====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token
+method: POST
+params: {
+    "grant_type": "passwd",
+    "phone": "18552288933",
+    "password": "bafa59c5938ad50f154006d25e46babd",
+    "dingLoginVersion": "new"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464"
+}
+json: None
+
+2023-05-25 18:14:09.465 | DEBUG | ====== request details ======
+url: https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token
+method: POST
+params: {
+    "grant_type": "passwd",
+    "phone": "18552288933",
+    "password": "bafa59c5938ad50f154006d25e46babd",
+    "dingLoginVersion": "new"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464"
+}
+json: None
+
+2023-05-25 18:14:09.617 | DEBUG | client IP: 10.20.221.95, Port: 64343
+2023-05-25 18:14:09.617 | DEBUG | client IP: 10.20.221.95, Port: 64343
+2023-05-25 18:14:09.617 | DEBUG | client IP: 10.20.221.95, Port: 64343
+2023-05-25 18:14:09.618 | DEBUG | server IP: 47.97.41.173, Port: 443
+2023-05-25 18:14:09.618 | DEBUG | server IP: 47.97.41.173, Port: 443
+2023-05-25 18:14:09.618 | DEBUG | server IP: 47.97.41.173, Port: 443
+2023-05-25 18:14:09.620 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?grant_type=passwd&phone=18552288933&password=bafa59c5938ad50f154006d25e46babd&dingLoginVersion=new
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:09.620 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?grant_type=passwd&phone=18552288933&password=bafa59c5938ad50f154006d25e46babd&dingLoginVersion=new
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:09.620 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://pbc-gateway.spre.hzmantu.com/pbc-auth/oauth/token?grant_type=passwd&phone=18552288933&password=bafa59c5938ad50f154006d25e46babd&dingLoginVersion=new
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "authorization": "Basic NW5LZ2NxRFY6Y2ZjMTI5NjQ3ZWMwMjk0Zjc5MDQyNWE1OTY2Yjc0MmVjMGZhNTcwOQ==",
+    "HRUN-Request-ID": "HRUN-6cca1023-eaa4-4ddd-9aeb-cade6e137ec2-649464",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:09.621 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.621 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.621 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.622 | INFO | status_code: 200, response_time(ms): 150.96 ms, response_length: 0 bytes
+2023-05-25 18:14:09.622 | INFO | status_code: 200, response_time(ms): 150.96 ms, response_length: 0 bytes
+2023-05-25 18:14:09.622 | INFO | status_code: 200, response_time(ms): 150.96 ms, response_length: 0 bytes
+2023-05-25 18:14:09.624 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.624 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.624 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "18",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}
+
+2023-05-25 18:14:09.625 | INFO | extract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}
+2023-05-25 18:14:09.625 | INFO | extract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}
+2023-05-25 18:14:09.625 | INFO | extract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}
+2023-05-25 18:14:09.626 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:09.626 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:09.626 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:09.627 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:09.627 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:09.627 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:09.628 | INFO | assert body.error_code equal None(NoneType)	==> pass
+2023-05-25 18:14:09.628 | INFO | assert body.error_code equal None(NoneType)	==> pass
+2023-05-25 18:14:09.628 | INFO | assert body.error_code equal None(NoneType)	==> pass
+2023-05-25 18:14:09.629 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:09.629 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:09.629 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:09.629 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log
+2023-05-25 18:14:09.629 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log
+2023-05-25 18:14:09.629 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/6cca1023-eaa4-4ddd-9aeb-cade6e137ec2.run.log

@@ -1,0 +1,12 @@
+
+
+[32m2023-05-25 18:14:09.751[0m | [1mINFO[0m | [1mStart to run testcase: 中台登录, TestCase ID: 71ff57d0-f831-4398-8b93-78ff787d3227[0m
+[32m2023-05-25 18:14:09.759[0m | [1mINFO[0m | [1mrun step begin: 账号密码登录 >>>>>>[0m
+[32m2023-05-25 18:14:09.929[0m | [1mINFO[0m | [1mstatus_code: 200, response_time(ms): 161.29 ms, response_length: 0 bytes[0m
+[32m2023-05-25 18:14:09.932[0m | [1mINFO[0m | [1mextract mapping: {'access_token': 'ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr'}[0m
+[32m2023-05-25 18:14:09.933[0m | [1mINFO[0m | [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-05-25 18:14:09.934[0m | [1mINFO[0m | [1massert body.success equal True(bool)	==> pass[0m
+[32m2023-05-25 18:14:09.935[0m | [1mINFO[0m | [1massert body.error_code equal None(NoneType)	==> pass[0m
+[32m2023-05-25 18:14:09.935[0m | [1mINFO[0m | [1mrun step end: 账号密码登录 <<<<<<
+[0m
+[32m2023-05-25 18:14:09.936[0m | [1mINFO[0m | [1mgenerate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/71ff57d0-f831-4398-8b93-78ff787d3227.run.log[0m

@@ -1,0 +1,36 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:10 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding",
+    "X-RateLimit-Remaining": "17",
+    "X-RateLimit-Requested-Tokens": "1",
+    "X-RateLimit-Burst-Capacity": "20",
+    "X-RateLimit-Replenish-Rate": "10",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "gzip"
+}
+body: {
+    "success": true,
+    "msg": {
+        "userid": 622730,
+        "authentication": "passwd",
+        "jti": "ae5a8328-351e-4d2b-abbd-cb3fae74e326",
+        "access_token": "ae5a8328-351e-4d2b-abbd-cb3fae74e3260dnr",
+        "token_type": null,
+        "refresh_token": null,
+        "expires_in": 12811
+    },
+    "error_code": null,
+    "error_msg": null,
+    "trace_id": null
+}

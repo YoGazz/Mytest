@@ -1,0 +1,180 @@
+2023-05-25 18:14:08.793 | INFO | run step begin: 获取登录鉴权 >>>>>>
+2023-05-25 18:14:08.793 | INFO | Start to run testcase: 预约端登录, TestCase ID: 3a265316-c34c-4bc0-b477-823c706bc92e
+2023-05-25 18:14:08.799 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:08.799 | INFO | run step begin: 账号密码登录 >>>>>>
+2023-05-25 18:14:08.800 | DEBUG | ====== request details ======
+url: https://api.pre.hzmantu.com/user_auth/login/pass
+method: GET
+params: {
+    "phone": "18552288933",
+    "pass": "123456",
+    "brand": "himo"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-3a265316-c34c-4bc0-b477-823c706bc92e-648800"
+}
+json: None
+
+2023-05-25 18:14:08.800 | DEBUG | ====== request details ======
+url: https://api.pre.hzmantu.com/user_auth/login/pass
+method: GET
+params: {
+    "phone": "18552288933",
+    "pass": "123456",
+    "brand": "himo"
+}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-3a265316-c34c-4bc0-b477-823c706bc92e-648800"
+}
+json: None
+
+2023-05-25 18:14:08.906 | DEBUG | client IP: 10.20.221.95, Port: 64340
+2023-05-25 18:14:08.906 | DEBUG | client IP: 10.20.221.95, Port: 64340
+2023-05-25 18:14:08.907 | DEBUG | server IP: 47.101.236.68, Port: 443
+2023-05-25 18:14:08.907 | DEBUG | server IP: 47.101.236.68, Port: 443
+2023-05-25 18:14:08.908 | DEBUG | 
+================== request details ==================
+method   : GET
+url      : https://api.pre.hzmantu.com/user_auth/login/pass?phone=18552288933&pass=123456&brand=himo
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-3a265316-c34c-4bc0-b477-823c706bc92e-648800"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:08.908 | DEBUG | 
+================== request details ==================
+method   : GET
+url      : https://api.pre.hzmantu.com/user_auth/login/pass?phone=18552288933&pass=123456&brand=himo
+headers  : {
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-3a265316-c34c-4bc0-b477-823c706bc92e-648800"
+}
+cookies  : {}
+body     : None
+
+2023-05-25 18:14:08.909 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "X-Trace-Id": "xahezSdQ2paYQTPv",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {
+    "acw_tc": "781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65"
+}
+encoding : utf-8
+content_type : application/json;charset=utf-8
+body     : {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:08.909 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "X-Trace-Id": "xahezSdQ2paYQTPv",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {
+    "acw_tc": "781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65"
+}
+encoding : utf-8
+content_type : application/json;charset=utf-8
+body     : {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:08.910 | INFO | status_code: 200, response_time(ms): 105.52 ms, response_length: 0 bytes
+2023-05-25 18:14:08.910 | INFO | status_code: 200, response_time(ms): 105.52 ms, response_length: 0 bytes
+2023-05-25 18:14:08.910 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "X-Trace-Id": "xahezSdQ2paYQTPv",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+body: {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:08.910 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Thu, 25 May 2023 10:14:09 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Set-Cookie": "acw_tc=781bad2316850096489775058e511dc113b97b1ef10e4de515aeedc11eef65;path=/;HttpOnly;Max-Age=1800",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-trace-id, x-stream-id, x-authority-action",
+    "X-Authority-Action": "Invoke",
+    "X-Stream-Id": "j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt",
+    "X-Trace-Id": "xahezSdQ2paYQTPv",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+body: {
+    "success": true,
+    "msg": "login success"
+}
+
+2023-05-25 18:14:08.912 | INFO | extract mapping: {'stream_id': 'j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt', 'Content-Type': 'application/json;charset=utf-8'}
+2023-05-25 18:14:08.912 | INFO | extract mapping: {'stream_id': 'j9if8ecq-89jx-7ca3-gvwe-95nb5364ka1pj3xt', 'Content-Type': 'application/json;charset=utf-8'}
+2023-05-25 18:14:08.912 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:08.912 | INFO | assert status_code equal 200(int)	==> pass
+2023-05-25 18:14:08.913 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:08.913 | INFO | assert body.success equal True(bool)	==> pass
+2023-05-25 18:14:08.913 | INFO | assert body.msg equal login success(str)	==> pass
+2023-05-25 18:14:08.913 | INFO | assert body.msg equal login success(str)	==> pass
+2023-05-25 18:14:08.914 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:08.914 | INFO | run step end: 账号密码登录 <<<<<<
+
+2023-05-25 18:14:08.914 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/3a265316-c34c-4bc0-b477-823c706bc92e.run.log
+2023-05-25 18:14:08.914 | INFO | generate testcase log: /Users/zhangbijiang/Desktop/自动化/ApiDemoTest/logs/3a265316-c34c-4bc0-b477-823c706bc92e.run.log
