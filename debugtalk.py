@@ -3,6 +3,7 @@ import time
 import datetime
 from typing import List
 from faker import Faker
+from httprunner import HttpRunner
 
 
 # commented out function will be filtered
