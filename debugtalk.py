@@ -2,7 +2,6 @@ import logging
 import time
 import datetime
 from typing import List
-from httprunner import HttpRunner
 from faker import Faker
 
 
